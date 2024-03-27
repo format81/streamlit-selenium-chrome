@@ -20,6 +20,6 @@ options.add_argument("--disable-gpu")
 options.add_argument("--headless")
 
 driver = get_driver()
-driver.get("https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/)
+driver.get("https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/")
 
 st.code(driver.page_source)
