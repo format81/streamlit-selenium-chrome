@@ -24,7 +24,8 @@ driver = get_driver()
 #st.code(driver.page_source)
 
 url = st.text_input("Enter the URL:")
-if url:
-    driver = get_driver()
-    driver.get(url)
-    st.code(driver.page_source)
+if url:  
+    driver.get(url)  
+    screenshot_path = "screenshot.png" # define your path where screenshot will be saved  
+    driver.save_screenshot(screenshot_path)  
+    st.image(screenshot_path)  # Display the screenshot in the Streamlit app  
